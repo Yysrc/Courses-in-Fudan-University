@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 20 11:08:34 2023
+# Process ID: 28868
+# Current directory: D:/Xilinx/Vivado_Projects/MIPS_IO_BAN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33468 D:\Xilinx\Vivado_Projects\MIPS_IO_BAN\MIPS.xpr
+# Log file: D:/Xilinx/Vivado_Projects/MIPS_IO_BAN/vivado.log
+# Journal file: D:/Xilinx/Vivado_Projects/MIPS_IO_BAN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado_Projects/MIPS_IO_BAN/MIPS.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+open_wave_config D:/Xilinx/Vivado_Projects/MIPS_IO_BAN/testbench_behav.wcfg
+source testbench.tcl
+close_sim

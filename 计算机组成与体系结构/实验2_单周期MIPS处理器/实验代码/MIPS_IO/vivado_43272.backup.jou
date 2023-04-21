@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 20 00:14:14 2023
+# Process ID: 43272
+# Current directory: D:/Xilinx/Vivado_Projects/MIPS_IO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent45268 D:\Xilinx\Vivado_Projects\MIPS_IO\MIPS.xpr
+# Log file: D:/Xilinx/Vivado_Projects/MIPS_IO/vivado.log
+# Journal file: D:/Xilinx/Vivado_Projects/MIPS_IO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado_Projects/MIPS_IO/MIPS.xpr
+launch_simulation
+open_wave_config D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg
+source testbench.tcl
+save_wave_config {D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg
+source testbench.tcl
+export_ip_user_files -of_objects  [get_files D:/Xilinx/Vivado_Projects/MIPS_IO/MIPS.srcs/sim_1/imports/Desktop/TestIO.dat] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/Xilinx/Vivado_Projects/MIPS_IO/MIPS.srcs/sim_1/imports/Desktop/TestIO.dat
+add_files -norecurse D:/Desktop/TestIO.dat
+close_sim
+launch_simulation
+open_wave_config D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/T/mips/dp/aluout}} 
+save_wave_config {D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Xilinx/Vivado_Projects/MIPS_IO/testbench_behav.wcfg
+source testbench.tcl
+close_sim

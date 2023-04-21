@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../MIPS.srcs/sources_1/new/top.sv" \
+"../../../../MIPS.srcs/sources_1/new/mips.sv" \
+"../../../../MIPS.srcs/sources_1/new/imem.sv" \
+"../../../../MIPS.srcs/sources_1/new/dmem.sv" \
+"../../../../MIPS.srcs/sources_1/new/controller.sv" \
+"../../../../MIPS.srcs/sources_1/new/maindec.sv" \
+"../../../../MIPS.srcs/sources_1/new/aludec.sv" \
+"../../../../MIPS.srcs/sources_1/new/datapath.sv" \
+"../../../../MIPS.srcs/sources_1/new/flopr.sv" \
+"../../../../MIPS.srcs/sources_1/new/adder.sv" \
+"../../../../MIPS.srcs/sources_1/new/mux2.sv" \
+"../../../../MIPS.srcs/sources_1/new/sl2.sv" \
+"../../../../MIPS.srcs/sources_1/new/regfile.sv" \
+"../../../../MIPS.srcs/sources_1/new/signext.sv" \
+"../../../../MIPS.srcs/sources_1/new/alu.sv" \
+"../../../../MIPS.srcs/sources_1/new/zeronext.sv" \
+"../../../../MIPS.srcs/sources_1/new/dMemoryDecoder.sv" \
+"../../../../MIPS.srcs/sources_1/new/IO.sv" \
+"../../../../MIPS.srcs/sources_1/new/mux7seg.sv" \
+"../../../../MIPS.srcs/sources_1/new/Hex7Seg.sv" \
+"../../../../MIPS.srcs/sim_1/new/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
